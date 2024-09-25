@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    /* Fondo negro para contraste */
+    color: #333;
+    margin-top: 200px;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to right, rgba(0, 204, 255, 0.9), rgba(0, 153, 51, 0.9));
+    /* Cambia aquí el color de fondo */
+    box-shadow: 0 10px 40px rgba(31, 38, 135, 0.5);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    /* Efecto de elevación al pasar el mouse */
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    /* Tamaño de fuente aumentado */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* Sombra para profundidad */
+}
+
+.image-input {
+    margin-bottom: 20px;
+}
+
+.cat-button {
+    background: linear-gradient(to right, #f39c12, #c0392b);
+    /* Degradado de rojo y amarillo */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cat-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #c0392b, #f39c12);
+    /* Cambia el orden del degradado */
+}
+
+
+
+.cat-button:disabled {
+    background-color: #d2b4de;
+    cursor: not-allowed;
+}
+
+.image-preview {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border-radius: 15px;
+    /* Bordes más redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra más suave */
+}
+
+.image-preview img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    /* Bordes redondeados en la imagen */
+}
+
+.error {
+    color: #e74c3c;
+    margin-top: 10px;
+    font-weight: bold;
+    /* Negrita para mayor énfasis */
+}
+
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(232, 218, 239, 0.8);
+    /* Fondo semitransparente */
+    border-left: 6px solid #8e44ad;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+}
+
+#fileInput {
+    display: none;
+}
+
+.image-input label {
+    display: inline-block;
+    padding: 12px 24px;
+    /* Aumentar el tamaño del botón */
+    background-color: #8e44ad;
+    color: white;
+    border-radius: 30px;
+    /* Bordes más redondeados */
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Añadir animación */
+}
+
+.image-input label:hover {
+    background-color: #9b59b6;
+    transform: translateY(-2px);
+    /* Efecto de elevación al pasar el mouse */
+}
