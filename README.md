@@ -34,4 +34,4 @@ Este proyecto es una aplicación web sencilla construida con Flask que permite a
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/Cedaleon/catScan.git
-   cd nombre_del_repositorio
+   cd catSacan
